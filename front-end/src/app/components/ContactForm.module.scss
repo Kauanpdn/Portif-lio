@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.contactForm {
+  width: 100%;
+  
+  &__group {
+    margin-bottom: $spacing-3;
+  }
+  
+  &__label {
+    display: block;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-text-primary;
+    margin-bottom: $spacing-1;
+  }
+  
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: $spacing-1 $spacing-2;
+    font-size: $font-size-base;
+    font-family: $font-family;
+    color: $color-text-primary;
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-sm;
+    transition: all $transition-fast;
+    
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 3px rgba($color-primary, 0.1);
+    }
+    
+    &::placeholder {
+      color: lighten($color-text-secondary, 20%);
+    }
+  }
+  
+  &__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  &__submit {
+    @include button-reset;
+    width: 100%;
+    background: $color-primary;
+    color: $color-white;
+    padding: $spacing-2 $spacing-4;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    transition: all $transition-fast;
+    
+    &:hover:not(:disabled) {
+      background: darken($color-primary, 10%);
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+    
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+  
+  &__success {
+    margin-top: $spacing-2;
+    padding: $spacing-2;
+    background: rgba($color-primary, 0.1);
+    color: $color-primary;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-sm;
+    text-align: center;
+  }
+}

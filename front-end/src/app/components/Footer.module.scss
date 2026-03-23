@@ -1,0 +1,128 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+  background: $color-secondary;
+  color: $color-white;
+  padding: $spacing-6 0 $spacing-3;
+  
+  &__container {
+    @include container;
+  }
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: $spacing-6;
+    padding-bottom: $spacing-4;
+    border-bottom: 1px solid rgba($color-white, 0.1);
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $spacing-4;
+    }
+  }
+  
+  &__brand {
+    @include mobile {
+      text-align: center;
+    }
+  }
+  
+  &__logo {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    font-family: 'Courier New', monospace;
+    margin-bottom: $spacing-1;
+  }
+  
+  &__tagline {
+    color: rgba($color-white, 0.7);
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+  
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-4;
+    
+    @include mobile {
+      text-align: center;
+    }
+  }
+  
+  &__section {
+    h5 {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      color: $color-white;
+      margin-bottom: $spacing-2;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-bottom: $spacing-1;
+        
+        a {
+          color: rgba($color-white, 0.7);
+          font-size: $font-size-sm;
+          transition: color $transition-fast;
+          
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  
+  &__socials {
+    display: flex;
+    gap: $spacing-1;
+    
+    @include mobile {
+      justify-content: center;
+    }
+    
+    a {
+      @include flex-center;
+      width: 36px;
+      height: 36px;
+      background: rgba($color-white, 0.1);
+      color: rgba($color-white, 0.7);
+      border-radius: $border-radius-sm;
+      transition: all $transition-fast;
+      
+      &:hover {
+        background: $color-primary;
+        color: $color-white;
+        transform: translateY(-2px);
+      }
+    }
+  }
+  
+  &__bottom {
+    padding-top: $spacing-3;
+    text-align: center;
+    
+    p {
+      font-size: $font-size-xs;
+      color: rgba($color-white, 0.6);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      
+      svg {
+        color: $color-primary;
+      }
+    }
+  }
+}

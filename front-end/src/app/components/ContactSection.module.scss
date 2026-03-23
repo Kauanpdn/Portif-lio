@@ -1,0 +1,118 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.contact {
+  padding: $spacing-8 0;
+  background: $color-white;
+  
+  @include mobile {
+    padding: $spacing-6 0;
+  }
+  
+  &__container {
+    @include container;
+  }
+  
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-6;
+    
+    h2 {
+      margin-bottom: $spacing-2;
+    }
+    
+    p {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+    }
+  }
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: $spacing-6;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3;
+  }
+  
+  &__infoCard {
+    @include card;
+    padding: $spacing-3;
+    
+    h4 {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      color: $color-text-primary;
+      margin: $spacing-1 0 4px;
+    }
+    
+    p, a {
+      font-size: $font-size-sm;
+      color: $color-text-secondary;
+      margin: 0;
+    }
+    
+    a {
+      color: $color-primary;
+      transition: color $transition-fast;
+      
+      &:hover {
+        color: darken($color-primary, 10%);
+      }
+    }
+  }
+  
+  &__infoIcon {
+    color: $color-primary;
+  }
+  
+  &__socials {
+    @include card;
+    padding: $spacing-3;
+    
+    h4 {
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      color: $color-text-primary;
+      margin-bottom: $spacing-2;
+    }
+  }
+  
+  &__socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-1;
+  }
+  
+  &__socialLink {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: $spacing-1;
+    padding: $spacing-1;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-text-primary;
+    transition: all $transition-fast;
+    
+    &:hover {
+      background: rgba($color-primary, 0.1);
+      color: $color-primary;
+    }
+  }
+  
+  &__formWrapper {
+    @include card;
+    padding: $spacing-4;
+  }
+}

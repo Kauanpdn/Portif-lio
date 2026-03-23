@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: $spacing-3;
+  position: relative;
+  
+  &:not(:last-child) {
+    padding-bottom: $spacing-4;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: 0;
+      width: 2px;
+      background: $color-border;
+    }
+  }
+  
+  &__marker {
+    position: relative;
+    padding-top: 6px;
+  }
+  
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $color-primary;
+    border: 3px solid $color-white;
+    box-shadow: 0 0 0 2px $color-primary;
+    position: relative;
+    z-index: 2;
+  }
+  
+  &__content {
+    background: $color-white;
+    padding: $spacing-3;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-sm;
+    border: 1px solid $color-border;
+    transition: all $transition-base;
+    
+    &:hover {
+      box-shadow: $shadow-md;
+      border-color: $color-primary;
+    }
+  }
+  
+  &__year {
+    display: inline-block;
+    background: rgba($color-primary, 0.1);
+    color: $color-primary;
+    padding: 4px $spacing-1;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    margin-bottom: $spacing-1;
+  }
+  
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-text-primary;
+    margin-bottom: 4px;
+  }
+  
+  &__subtitle {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-primary;
+    margin-bottom: $spacing-1;
+  }
+  
+  &__description {
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+    line-height: $line-height-relaxed;
+    margin: 0;
+  }
+}

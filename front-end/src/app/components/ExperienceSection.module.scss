@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.experience {
+  padding: $spacing-8 0;
+  background: $color-light-bg;
+  
+  @include mobile {
+    padding: $spacing-6 0;
+  }
+  
+  &__container {
+    @include container;
+  }
+  
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-6;
+    
+    h2 {
+      margin-bottom: $spacing-2;
+    }
+    
+    p {
+      font-size: $font-size-lg;
+      color: $color-text-secondary;
+    }
+  }
+  
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-2;
+    margin-bottom: $spacing-6;
+  }
+  
+  &__tab {
+    @include button-reset;
+    padding: $spacing-1 $spacing-4;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $color-text-secondary;
+    background: $color-white;
+    border: 2px solid $color-border;
+    transition: all $transition-fast;
+    
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+    
+    &.active {
+      background: $color-primary;
+      color: $color-white;
+      border-color: $color-primary;
+    }
+  }
+  
+  &__timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

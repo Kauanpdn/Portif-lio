@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.aboutCard {
+  @include card;
+  @include hover-lift;
+  text-align: center;
+  
+  &__icon {
+    @include flex-center;
+    width: 56px;
+    height: 56px;
+    background: rgba($color-primary, 0.1);
+    color: $color-primary;
+    border-radius: $border-radius-md;
+    margin: 0 auto $spacing-2;
+  }
+  
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-text-primary;
+    margin-bottom: $spacing-1;
+  }
+  
+  &__description {
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+    margin: 0;
+  }
+}
