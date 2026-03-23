@@ -9,7 +9,7 @@ const ContactSection: React.FC = () => {
       <div className={styles.contact__container}>
         <div className={styles.contact__header}>
           <h2>Get In Touch</h2>
-          <p>Let's discuss your next project or opportunity</p>
+          <p>Vamos conversar sobre seu próximo projeto ou oportunidade.</p>
         </div>
         
         <div className={styles.contact__content}>
@@ -17,20 +17,20 @@ const ContactSection: React.FC = () => {
             <div className={styles.contact__infoCard}>
               <Mail className={styles.contact__infoIcon} size={24} />
               <h4>Email</h4>
-              <a href="mailto:developer@example.com">developer@example.com</a>
+              <a href="mailto:developer@example.com">kauan.pnascimento750@gmail.com</a>
             </div>
             
             <div className={styles.contact__infoCard}>
               <MapPin className={styles.contact__infoIcon} size={24} />
               <h4>Location</h4>
-              <p>San Francisco, CA</p>
+              <p>São Paulo, SP</p>
             </div>
             
             <div className={styles.contact__socials}>
-              <h4>Connect With Me</h4>
+              <h4>Conecte-se comigo</h4>
               <div className={styles.contact__socialLinks}>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Kauanpdn" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.contact__socialLink}
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
                   GitHub
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/kauan-pinheiro-do-nascimento/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.contact__socialLink}

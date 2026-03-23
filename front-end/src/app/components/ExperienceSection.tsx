@@ -7,43 +7,31 @@ const ExperienceSection: React.FC = () => {
 
   const experienceData = [
     {
-      year: '2024 - Present',
-      title: 'Senior Full Stack Developer',
-      subtitle: 'Tech Solutions Inc.',
-      description: 'Leading development of enterprise applications using Java, Spring Boot, and React. Mentoring junior developers and implementing best practices.',
-    },
-    {
-      year: '2022 - 2024',
-      title: 'Full Stack Developer',
-      subtitle: 'Digital Innovations Co.',
-      description: 'Developed and maintained multiple client projects using Angular, Spring Boot, and MySQL. Collaborated with cross-functional teams to deliver high-quality solutions.',
-    },
-    {
-      year: '2020 - 2022',
-      title: 'Junior Developer',
-      subtitle: 'StartUp Ventures',
-      description: 'Built responsive web applications and REST APIs. Gained experience in agile development and version control systems.',
+      year: '2024 - 2025',
+      title: 'Desenvolvedor Front-end',
+      subtitle: 'Freelancer',
+      description: 'Desenvolvimento de landing page profissional para apresentação dos serviços de consultoria fitness e aulas personalizadas com foco em posicionamento digital e captação de novos alunos. Aplicação de boas práticas de UI/UX, responsividade e performance utilizando React, Vite e Tailwind CSS. Atuação em contato direto com o cliente para alinhamento estratégico de identidade visual, estrutura de conteúdo e otimização para conversão de leads.',
     },
   ];
 
   const educationData = [
     {
-      year: '2016 - 2020',
-      title: 'Bachelor of Science in Computer Science',
-      subtitle: 'University of Technology',
-      description: 'Graduated with honors. Focused on software engineering, algorithms, and web development. Completed capstone project on distributed systems.',
+      year: '2024 - atual',
+      title: 'Bacharelado em ciência da computação e',
+      subtitle: 'Universidade Estácio',
+      description: 'Graduação em Ciência da Computação com foco em desenvolvimento de software, estruturas de dados, algoritmos e arquitetura de sistemas.',
     },
     {
-      year: '2023',
-      title: 'AWS Certified Solutions Architect',
-      subtitle: 'Amazon Web Services',
-      description: 'Professional certification demonstrating expertise in designing distributed systems on AWS.',
+      year: '2025 - 2026',
+      title: 'Java do básico ao avançado',
+      subtitle: 'Curso profinalizante',
+      description: 'Curso voltado para o desenvolvimento da lógica de programação e domínio da linguagem Java, abordando desde os fundamentos até conceitos mais avançados. Conteúdo prático com exercícios e projetos, incluindo estrutura de dados básicas, orientação a objetos, boas práticas e aplicação do Java em cenários reais de desenvolvimento.',
     },
     {
-      year: '2022',
-      title: 'Oracle Certified Professional Java Developer',
-      subtitle: 'Oracle',
-      description: 'Certification validating proficiency in Java SE development and best practices.',
+      year: '2023 - 2024',
+      title: 'Técnico em Informática para Internet',
+      subtitle: 'Senac, São Paulo',
+      description: 'Formação técnica full stack com foco em desenvolvimento web e mobile, utilizando React, Node.js e React Native, além de integração com APIs e banco de dados.',
     },
   ];
 
@@ -54,7 +42,7 @@ const ExperienceSection: React.FC = () => {
       <div className={styles.experience__container}>
         <div className={styles.experience__header}>
           <h2>Experience & Education</h2>
-          <p>My professional journey and qualifications</p>
+          <p>Minha trajetória profissional e minhas qualificações</p>
         </div>
         
         <div className={styles.experience__tabs}>

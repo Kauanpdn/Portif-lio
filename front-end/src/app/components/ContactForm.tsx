@@ -17,8 +17,16 @@ const ContactForm: React.FC = () => {
   };
 
   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+    // e.preventDefault();
+    // setIsSubmitting(true);
+  const message = `Olá, meu nome é ${formData.name}%0AEmail: ${formData.email}%0AMensagem: ${formData.message}`;
+
+  const phone = '5511982371141'; // 👈 troca pelo seu número
+
+  window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+
+  // reset opcional
+  setFormData({ name: '', email: '', message: '' });
     
     // Simulate form submission
     setTimeout(() => {
@@ -84,12 +92,12 @@ const ContactForm: React.FC = () => {
         className={styles.contactForm__submit}
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Sending...' : 'Send Message'}
+        {isSubmitting ? 'Sending...' : 'Enviar mensagem'}
       </button>
       
       {submitStatus === 'success' && (
         <div className={styles.contactForm__success}>
-          Message sent successfully! I'll get back to you soon.
+          Mensagem enviada com sucesso! Entrarei em contato em breve.
         </div>
       )}
     </form>

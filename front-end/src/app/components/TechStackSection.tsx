@@ -16,6 +16,10 @@ const TechStackSection: React.FC = () => {
     { name: 'Docker', icon: '🐳', color: '#2496ED' },
     { name: 'Git', icon: '📦', color: '#F05032' },
     { name: 'AWS', icon: '☁️', color: '#FF9900' },
+    { name: 'React Native', icon: '⚛️', color: '#61DAFB' },
+    { name: 'Python', icon: '🐍', color: '#3776AB' },
+    { name: 'Php', icon: '🐘', color: '#777BB4' },
+    { name: 'C', icon: '💻', color: '#A8B9CC' },
   ];
 
   return (
@@ -23,7 +27,7 @@ const TechStackSection: React.FC = () => {
       <div className={styles.techStack__container}>
         <div className={styles.techStack__header}>
           <h2>Tech Stack</h2>
-          <p>Technologies and tools I work with</p>
+          <p>Tecnologias e ferramentas com as quais trabalho</p>
         </div>
         
         <div className={styles.techStack__grid}>

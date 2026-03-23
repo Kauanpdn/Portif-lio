@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbar__container}>
         <div className={styles.navbar__logo}>
-          <span className={styles.navbar__logoText}>{'<Dev />'}</span>
+          <span className={styles.navbar__logoText}>{'< Kauan Dev/>'}</span>
         </div>
 
         <button

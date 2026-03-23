@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <div className={styles.hero__container}>
         <div className={styles.hero__content}>
           <div className={styles.hero__badge}>
-            👋 Welcome to my portfolio
+            👋 Bem-vindo ao meu portfólio
           </div>
           
           <h1 className={styles.hero__title}>
@@ -23,15 +23,15 @@ const HeroSection: React.FC = () => {
           </h1>
           
           <p className={styles.hero__subtitle}>
-            Specialized in <span className={styles.hero__highlight}>Java</span>, 
+            Especializado em <span className={styles.hero__highlight}>Java</span>, 
             <span className={styles.hero__highlight}> Spring Boot</span>, 
             <span className={styles.hero__highlight}> React</span> and 
             <span className={styles.hero__highlight}> Angular</span>
           </p>
           
           <p className={styles.hero__description}>
-            Building scalable, high-performance web applications with modern technologies. 
-            Passionate about clean code, best practices, and delivering exceptional user experiences.
+            Construindo aplicações web escaláveis ​​e de alto desempenho com tecnologias modernas.
+            Apaixonado por código limpo, melhores práticas e por proporcionar experiências de usuário excepcionais.
           </p>
           
           <div className={styles.hero__buttons}>
@@ -39,26 +39,26 @@ const HeroSection: React.FC = () => {
               className={styles.hero__primaryBtn}
               onClick={() => scrollToSection('projects')}
             >
-              View Projects
+              Ver projetos
             </button>
             <button 
               className={styles.hero__secondaryBtn}
               onClick={() => scrollToSection('contact')}
             >
-              Contact Me
+              Entre em contato comigo
             </button>
           </div>
           
           <div className={styles.hero__socials}>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.hero__socialLink}>
+            <a href="https://github.com/Kauanpdn" target="_blank" rel="noopener noreferrer" className={styles.hero__socialLink}>
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.hero__socialLink}>
+            <a href="https://www.linkedin.com/in/kauan-pinheiro-do-nascimento/" target="_blank" rel="noopener noreferrer" className={styles.hero__socialLink}>
               <Linkedin size={20} />
             </a>
-            <a href="mailto:developer@example.com" className={styles.hero__socialLink}>
+            {/* <a href="mailto:developer@example.com" className={styles.hero__socialLink}>
               <Mail size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
         

@@ -10,6 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+   base: '/Portif-lio/', // 👈 AQUI
   resolve: {
     alias: {
       // Alias @ to the src directory

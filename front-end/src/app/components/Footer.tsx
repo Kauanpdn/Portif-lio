@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
       <div className={styles.footer__container}>
         <div className={styles.footer__content}>
           <div className={styles.footer__brand}>
-            <div className={styles.footer__logo}>{'<Dev />'}</div>
+            <div className={styles.footer__logo}>{'< Kauan Dev />'}</div>
             <p className={styles.footer__tagline}>
-              Building the future, one line of code at a time.
+              Construindo o futuro, uma linha de código de cada vez.
             </p>
           </div>
           
@@ -30,15 +30,15 @@ const Footer: React.FC = () => {
             <div className={styles.footer__section}>
               <h5>Connect</h5>
               <div className={styles.footer__socials}>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Kauanpdn" target="_blank" rel="noopener noreferrer">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/kauan-pinheiro-do-nascimento/" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:developer@example.com">
+                {/* <a href="mailto:developer@example.com">
                   <Mail size={20} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         
         <div className={styles.footer__bottom}>
           <p>
-            © {currentYear} Full Stack Developer. Made with <Heart size={14} fill="currentColor" /> using React & SCSS
+            © {currentYear} Full Stack Developer. Feito com <Heart size={14} fill="currentColor" /> usando React & SCSS
           </p>
         </div>
       </div>
